@@ -1,0 +1,15 @@
+* {
+    border: 1px solid red !important;
+}
+
+/*restrict webpage to a minimum width of 300px, a maximum width of 1299px*/
+body {
+  min-width: 200px;
+}
+
+@media screen and (max-width: 499px) {
+  .single-column {
+    width: 100%;
+    margin: 0;
+  }
+}
