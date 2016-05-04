@@ -2,7 +2,7 @@
     border: 1px solid red !important;
 }
 
-/*restrict webpage to a minimum width of 300px, a maximum width of 1299px*/
+/*restrict webpage to a minimum width of 200px*/
 body {
   min-width: 200px;
 }
@@ -12,4 +12,9 @@ body {
     width: 100%;
     margin: 0;
   }
+}
+
+/*Colors*/
+body {
+  color: #bcbbbb;
 }
