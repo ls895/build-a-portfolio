@@ -8,6 +8,11 @@ body {
 }
 
 @media screen and (max-width: 499px) {
+  body {
+    width: 90%;
+    margin: 0 auto;
+  }
+
   .single-column {
     width: 100%;
     margin: 0;
