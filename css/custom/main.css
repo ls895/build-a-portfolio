@@ -4,9 +4,11 @@
 
 /*restrict webpage to a minimum width of 200px*/
 body {
-  min-width: 200px;
+  min-width: 300px;
+  font-family: "Lato", sans-serif;
 }
 
+/*media queries for sub 500px displays*/
 @media screen and (max-width: 499px) {
   body {
     width: 90%;
@@ -17,9 +19,37 @@ body {
     width: 100%;
     margin: 0;
   }
+
+  #title-role {
+    text-align: center;
+  }
 }
 
-/*Colors*/
+/*Colors, text and text link decoration*/
 body {
   color: #bcbbbb;
+}
+
+#title-role {
+  color: #747704;
+}
+
+figcaption {
+  color: #747704;
+}
+
+figcaption a {
+  text-decoration: none;
+}
+
+figcaption a:hover {
+  text-decoration: none;
+}
+
+figcaption a:link {
+  color: #747704;
+}
+
+figcaption a:visited {
+  color: #747704;
 }
