@@ -1,15 +1,8 @@
-* {
+/** {
     border: 1px solid red !important;
-}
-
-/*restrict webpage to a minimum width of 200px*/
-body {
-  min-width: 300px;
-  font-family: "Lato", sans-serif;
-}
-
+}*/
 /*media queries for sub 500px displays*/
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 399px) {
   body {
     width: 90%;
     margin: 0 auto;
@@ -25,9 +18,20 @@ body {
   }
 }
 
-/*Colors, text and text link decoration*/
+/*restrict webpage to a minimum width of 200px*/
+body {
+  min-width: 300px;
+  font-family: "Lato", sans-serif;
+}
+
+/*Colors, text decoration*/
 body {
   color: #bcbbbb;
+}
+
+hr {
+  color: #bcbbbb;
+  background-color: #bcbbbb;
 }
 
 #title-role {
@@ -52,4 +56,33 @@ figcaption a:link {
 
 figcaption a:visited {
   color: #747704;
+}
+
+/*font size*/
+@media screen and (max-width: 449px) {
+  #name {
+    font-size: 22px;
+  }
+
+  #title {
+    font-size: 15px;
+  }
+
+  #feature {
+    font-size: 18px;
+  }
+}
+
+hr {
+  height: 2px;
+}
+
+/*spacing*/
+figcaption {
+  margin: 5px auto;
+  overflow-x: auto;
+}
+
+figcaption p {
+  margin-bottom: 5px;
 }
