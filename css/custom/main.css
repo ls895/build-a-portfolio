@@ -4,8 +4,7 @@
 /*media queries for sub 500px displays*/
 @media screen and (max-width: 399px) {
   body {
-    width: 90%;
-    margin: 0 auto;
+    width: 95%;
   }
 
   .single-column {
@@ -21,12 +20,12 @@
 /*restrict webpage to a minimum width of 200px*/
 body {
   min-width: 300px;
-  font-family: "Lato", sans-serif;
 }
 
 /*Colors, text decoration*/
 body {
   color: #bcbbbb;
+  font-family: "Architects Daughter", cursive;
 }
 
 hr {
@@ -40,6 +39,7 @@ hr {
 
 figcaption {
   color: #747704;
+  font-family: "Lato", sans-serif;
 }
 
 figcaption a {
@@ -60,15 +60,15 @@ figcaption a:visited {
 
 /*font size*/
 @media screen and (max-width: 449px) {
-  #name {
+  h2 {
     font-size: 22px;
   }
 
-  #title {
+  h4 {
     font-size: 15px;
   }
 
-  #feature {
+  h3 {
     font-size: 18px;
   }
 }
@@ -78,6 +78,10 @@ hr {
 }
 
 /*spacing*/
+body {
+  margin: 1% auto;
+}
+
 figcaption {
   margin: 5px auto;
   overflow-x: auto;
