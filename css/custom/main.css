@@ -1,8 +1,5 @@
-/** {
-    border: 1px solid red !important;
-}*/
-/*media queries for sub 500px displays*/
-@media screen and (max-width: 399px) {
+/*media queries for sub 500px single column displays*/
+@media screen and (max-width: 379px) {
   body {
     width: 95%;
   }
@@ -17,12 +14,16 @@
   }
 }
 
-/*restrict webpage to a minimum width of 200px*/
+/*element size restrictions*/
 body {
   min-width: 300px;
 }
 
-/*Colors, text decoration*/
+#udacity-logo {
+  max-height: 100px;
+}
+
+/*Colors, font, text decoration*/
 body {
   color: #bcbbbb;
   font-family: "Architects Daughter", cursive;
@@ -58,7 +59,7 @@ figcaption a:visited {
   color: #747704;
 }
 
-/*font size*/
+/*font size change at sub 500 displays*/
 @media screen and (max-width: 449px) {
   h2 {
     font-size: 22px;
@@ -71,6 +72,11 @@ figcaption a:visited {
   h3 {
     font-size: 18px;
   }
+
+  #udacity-logo {
+    max-height: 80px;
+  }
+
 }
 
 hr {
