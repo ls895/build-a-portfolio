@@ -1,3 +1,6 @@
+/** {
+    border: 1px solid red !important;
+}*/
 /*media queries for sub 500px single column displays*/
 @media screen and (max-width: 379px) {
   body {
@@ -95,4 +98,22 @@ figcaption {
 
 figcaption p {
   margin-bottom: 5px;
+}
+
+/*gallery*/
+.box-around {
+  max-width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box-around img {
+  max-width: 100%;
+}
+
+.dummy {
+  width: 50%;
+  margin: 0;
+  padding: 0;
 }
