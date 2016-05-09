@@ -1,6 +1,3 @@
-/** {
-    border: 1px solid red !important;
-}*/
 /*media queries for sub 500px single column displays*/
 @media screen and (max-width: 379px) {
   body {
@@ -28,7 +25,7 @@ body {
 
 /*Colors, font, text decoration*/
 body {
-  color: #bcbbbb;
+  color: #777;
   font-family: "Architects Daughter", cursive;
 }
 
@@ -42,8 +39,7 @@ hr {
 }
 
 figcaption {
-  color: #747704;
-  font-family: "Lato", sans-serif;
+  color: #777;
 }
 
 figcaption a {
@@ -55,11 +51,11 @@ figcaption a:hover {
 }
 
 figcaption a:link {
-  color: #747704;
+  color: #777;
 }
 
 figcaption a:visited {
-  color: #747704;
+  color: #777;
 }
 
 /*font size change at sub 500 displays*/
@@ -91,6 +87,10 @@ body {
   margin: 1% auto;
 }
 
+header {
+  padding-top: 5px;
+}
+
 figcaption {
   margin: 5px auto;
   overflow-x: auto;
@@ -100,7 +100,7 @@ figcaption p {
   margin-bottom: 5px;
 }
 
-/*gallery*/
+/*gallery styles*/
 .box-around {
   max-width: 300px;
   margin: 0 auto;
@@ -117,4 +117,71 @@ figcaption p {
   margin: 0;
   padding: 0;
   cursor: pointer;
+}
+
+/*box shadows for image and container*/
+.closed {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+/*featured work image shadow*/
+.effect {
+  box-shadow: 0 10px 6px -6px #777;
+}
+
+/*container shadow*/
+.conEffect {
+  position:relative;
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.conEffect:before,
+.conEffect:after {
+	content:"";
+  position:absolute;
+  z-index:-1;
+  box-shadow:0 0 20px rgba(0,0,0,0.8);
+  top:10px;
+  bottom:10px;
+  left:0;
+  right:0;
+  border-radius:100px / 10px;
+}
+
+.conEffect:after {
+  right:10px;
+  left:auto;
+  transform:skew(8deg) rotate(3deg);
+}
+
+/*container background texture*/
+.paper {
+  background-color: #f7f7f7;
+  background-image: url("../../img/paper.png");
+}
+
+/*hero image shadow*/
+.heroEffect {
+  position:relative;
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.heroEffect:before,
+.heroEffect:after {
+  content:"";
+  position:absolute;
+  z-index:-1;
+  box-shadow:0 0 20px rgba(0,0,0,0.8);
+  top:0;
+  bottom:0;
+  left:10px;
+  right:10px;
+  border-radius:100px / 10px;
+}
+
+.heroEffect:after {
+  right:10px;
+  left:auto;
+  transform:skew(8deg) rotate(3deg);
 }

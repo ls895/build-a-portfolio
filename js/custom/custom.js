@@ -4,11 +4,9 @@ $(".dummy").click(
   function(event) {
     event.stopPropagation();
     if ($(this).siblings().is(':animated')) {
-      console.log("shit animating cannot click");
       return;
     };
     if (isEnlarged) {
-      console.log("enlarged cannot do anymore");
       return;
     }
     isEnlarged = true;
@@ -54,15 +52,15 @@ $(".dummy").click(
       }
     }
 
-    var index_highest = 0;
+    var indexHighest = 0;
     $(".dummy").each(function() {
-    var index_current = parseInt($(this).css("zIndex"), 10);
-      if(index_current > index_highest) {
-        index_highest = index_current;
+    var indexCurrent = parseInt($(this).css("zIndex"), 10);
+      if(indexCurrent > indexHighest) {
+        indexHighest = indexCurrent;
       }
     });
     $(this).css(
-      "z-index", index_highest + 1
+      "z-index", indexHighest + 1
     );
 
     $(this).animate(
@@ -91,7 +89,6 @@ $(".dummy").click(
 
 $('html').click(function(event) {
   if ($(".dummy").is(':animated')) {
-    console.log("dummy animating html click no use");
     return;
   };
   if (isEnlarged) {
@@ -166,7 +163,6 @@ $('html').click(function(event) {
       }
     );
   } else {
-    console.log("no shit is enlarged");
   }
   }
 );
