@@ -8,10 +8,6 @@
     width: 100%;
     margin: 0;
   }
-
-  #title-role {
-    text-align: center;
-  }
 }
 
 /*element size restrictions*/
@@ -34,27 +30,17 @@ hr {
   background-color: #bcbbbb;
 }
 
-#title-role {
-  color: #747704;
-}
-
 figcaption {
   color: #777;
-}
-
-figcaption a {
-  text-decoration: none;
 }
 
 figcaption a:hover {
   text-decoration: none;
 }
 
-figcaption a:link {
-  color: #777;
-}
-
+figcaption a:link,
 figcaption a:visited {
+  text-decoration: none;
   color: #777;
 }
 
@@ -75,7 +61,6 @@ figcaption a:visited {
   #udacity-logo {
     max-height: 80px;
   }
-
 }
 
 hr {
@@ -88,7 +73,7 @@ body {
 }
 
 header {
-  padding-top: 5px;
+  padding-top: 8px;
 }
 
 figcaption {
@@ -126,62 +111,62 @@ figcaption p {
 }
 
 /*featured work image shadow*/
-.effect {
+.feature-effect {
   box-shadow: 0 10px 6px -6px #777;
 }
 
 /*container shadow*/
-.conEffect {
+.con-effect {
   position:relative;
-  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
-.conEffect:before,
-.conEffect:after {
-	content:"";
-  position:absolute;
-  z-index:-1;
-  box-shadow:0 0 20px rgba(0,0,0,0.8);
-  top:10px;
-  bottom:10px;
-  left:0;
-  right:0;
-  border-radius:100px / 10px;
+.con-effect:before,
+.con-effect:after {
+	content: "";
+  position: absolute;
+  z-index: -1;
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
+  top: 10px;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  border-radius: 100px / 10px;
 }
 
-.conEffect:after {
-  right:10px;
-  left:auto;
-  transform:skew(8deg) rotate(3deg);
+.con-effect:after {
+  right: 10px;
+  left: auto;
+  transform: skew(8deg) rotate(3deg);
 }
 
 /*container background texture*/
 .paper {
   background-color: #f7f7f7;
-  background-image: url("../../img/paper.png");
+  background-image: url(../../img/paper.png);
 }
 
 /*hero image shadow*/
-.heroEffect {
-  position:relative;
-  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+.hero-effect {
+  position: relative;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
-.heroEffect:before,
-.heroEffect:after {
-  content:"";
-  position:absolute;
-  z-index:-1;
-  box-shadow:0 0 20px rgba(0,0,0,0.8);
-  top:0;
-  bottom:0;
-  left:10px;
-  right:10px;
-  border-radius:100px / 10px;
+.hero-effect:before,
+.hero-effect:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  border-radius: 100px / 10px;
 }
 
-.heroEffect:after {
-  right:10px;
-  left:auto;
-  transform:skew(8deg) rotate(3deg);
+.hero-effect:after {
+  right: 10px;
+  left: auto;
+  transform: skew(8deg) rotate(3deg);
 }
