@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>David Law | Portfolio</title>
+    <link rel="shortcut icon" type="image/ico" href="img/favicon-paper-plane.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -29,12 +30,12 @@
                 <a class="brandico-instagram-filled" href="http://instagram.com" target="_blank"></a>
               </li>
             </ul>
-          </div>
-        </div>
-      </nav>
+          </div> <!-- collapse navbar -->
+        </div> <!-- container fluid -->
+      </nav> <!-- navbar -->
       <header class="row">
         <div class="col-xs-6 col-sm-6">
-          <img id="udacity-logo" class="img-responsive" src="img/udacity_logo.png" alt="Logo">
+          <img class="img-responsive udacity-logo" src="img/udacity_logo.png" alt="Logo">
         </div>
         <div class="col-xs-6 col-sm-6">
           <h2 class="text-right">DAVID LAW</h2>
@@ -50,17 +51,14 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
           <picture>
             <source
-              media="(min-width: 992px)"
-              srcset="img/hero_large_1x.webp, img/hero_large_2x.webp 2x">
-            <source
               media="(min-width: 768px)"
-              srcset="img/hero_small_1x.webp, img/hero_small_2x.webp 2x">
+              srcset="img/hero_small_1x.webp 1000w, img/hero_large_1x.webp 1200w, img/hero_small_2x.webp 2000w, img/hero_large_2x.webp 2400w">
             <source
-              srcset="img/hero_cropped_1x.webp, img/hero_cropped_2x.webp 2x">
+              srcset="img/hero_cropped_1x.webp 800w, img/hero_cropped_2x.webp 1600w">
             <img class="img-responsive center-block hero-effect" src="img/hero_fallback.jpg" alt="fallback hero image">
           </picture>
-        </div>
-      </div>
+        </div> <!-- col-xs-12 col-sm-12 col-md-12 -->
+      </div> <!-- row -->
       <section id="feature-work">
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-4">
@@ -68,7 +66,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-6 col-sm-6 col-md-4 single-column">
+          <article class="col-xs-6 col-sm-6 col-md-4 single-column">
             <figure class="text-center">
               <div class="box-around feature-effect">
                 <div id="dummy1" class="dummy">
@@ -89,8 +87,8 @@
                 <a href="https://github.com/ls895" target="_blank">https://github.com/ls895/portfolio/</a>
               </figcaption>
             </figure>
-          </div>
-          <div class="col-xs-6 col-sm-6 col-md-4 single-column">
+          </article>
+          <article class="col-xs-6 col-sm-6 col-md-4 single-column">
             <figure class="text-center">
               <div class="closed feature-effect">
                 <img class="img-responsive center-block" src="img/work.jpg" alt="work and office">
@@ -100,9 +98,9 @@
                 <a href="https://github.com/ls895" target="_blank">https://github.com/ls895/resume/</a>
               </figcaption>
             </figure>
-          </div>
+          </article>
           <div class="clearfix visible-xs-block"></div>
-          <div class="col-xs-6 col-sm-6 col-md-4 single-column">
+          <article class="col-xs-6 col-sm-6 col-md-4 single-column">
             <figure class="text-center">
               <div class="closed feature-effect">
                 <img class="img-responsive center-block" src="img/game.jpg" alt="chess game">
@@ -112,10 +110,10 @@
                 <a href="https://github.com/ls895" target="_blank">https://github.com/ls895/arcade/</a>
               </figcaption>
             </figure>
-          </div>
-        </div>
-      </section>
-    </div>
+          </article> <!-- col-xs-6 col-sm-6 col-md-4 single-column -->
+        </div> <!-- portfolio showcases -->
+      </section> <!-- feature-work -->
+    </div> <!-- container -->
     <script src="js/jquery-2.2.3.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/custom/custom.js"></script>
