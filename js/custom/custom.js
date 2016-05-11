@@ -92,12 +92,11 @@ $(".dummy").click(
 );
 // Functions to be run when anywhere else on the page is clicked
 $('html').click(function(event) {
-  console.log("diulasing");
-  // Stop the click function if there is ongoing animation
+  // Stop the function if there is any ongoing animation
   if ($(".dummy").is(':animated')) {
     return;
   };
-  // Continue if there is any enlarged image
+  // Continue if there is any enlarged image on the page
   if (isEnlarged) {
     // Check user agent to prevent a jump to top of page bug when viewing on mobile
     var isMobile = false;
@@ -175,7 +174,7 @@ $('html').click(function(event) {
   }
   }
 );
-// Javascript for enabling the darkening feature
+// Javascript for enabling the collapse feature and inhibiting event propagation upto the html
 $("#down-btn").click(function(event) {
   event.stopPropagation();
   $(".collapse").collapse("toggle");

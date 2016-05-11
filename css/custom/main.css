@@ -1,4 +1,7 @@
-/*media queries for sub 500px single column displays*/
+/*import brandico icon fonts*/
+@import url(http://weloveiconfonts.com/api/?family=brandico);
+
+/*media queries for sub 380px single column displays*/
 @media screen and (max-width: 379px) {
   body {
     width: 95%;
@@ -20,38 +23,15 @@ body {
 }
 
 /*navbar custom styles*/
-@media (min-width: 768px) {
-  .navbar-nav {
-    float: none;
-  }
-}
-
-.navbar-collapse {
-  text-align: center;
-  border: 0;
-}
-
 .navbar {
-  margin-bottom: initial;
+  border: 0;
+  margin-bottom: 0;
   min-height: 20px;
-}
-
-.navbar-nav {
-  display: inline-block;
-}
-
-.navbar li {
-  float: left;
-}
-
-.navbar-default,
-.navbar-toggle,
-.navbar-toggle:hover {
-    background-color: initial !important;
 }
 
 .navbar-header {
   text-align: center;
+  line-height: 1;
 }
 
 .navbar-toggle {
@@ -61,10 +41,45 @@ body {
   border: 0;
 }
 
+.navbar-default,
+.navbar-toggle,
+.navbar-toggle:hover {
+  background-color: transparent !important;
+}
+
+.navbar-collapse {
+  text-align: center;
+  border: 0;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    float: none;
+  }
+}
+
+.navbar-nav {
+  margin: 0;
+  display: inline-block;
+}
+
+.navbar-nav li {
+  float: left;
+}
+
+.navbar-nav li a {
+  padding: 5px 25px;
+  opacity: 0.8;
+}
+
 /*Colors, font, text decoration*/
 body {
   color: #777;
   font-family: "Architects Daughter", cursive;
+}
+
+[class*="brandico-"]:before {
+  font-family: "brandico", sans-serif;
 }
 
 hr {
@@ -76,14 +91,14 @@ figcaption {
   color: #777;
 }
 
-figcaption a:hover {
-  text-decoration: none;
-}
-
 figcaption a:link,
 figcaption a:visited {
   text-decoration: none;
   color: #777;
+}
+
+figcaption a:hover {
+  color: #333;
 }
 
 /*font sizes, etc.*/
@@ -111,6 +126,7 @@ hr {
 
 .glyphicon {
   font-size: 10px;
+  opacity: 0.8;
 }
 
 /*spacing*/
