@@ -61,20 +61,6 @@ body {
   border: 0;
 }
 
-/*darken effect*/
-/*.darken {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.appear {
-  background-color: #000;
-  opacity: 0.5;
-}*/
-
 /*Colors, font, text decoration*/
 body {
   color: #777;
