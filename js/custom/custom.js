@@ -92,6 +92,7 @@ $(".dummy").click(
 );
 // Functions to be run when anywhere else on the page is clicked
 $('html').click(function(event) {
+  console.log("diulasing");
   // Stop the click function if there is ongoing animation
   if ($(".dummy").is(':animated')) {
     return;
@@ -174,3 +175,51 @@ $('html').click(function(event) {
   }
   }
 );
+// Javascript for enabling the darkening feature
+$("#down-btn").click(function(event) {
+  event.stopPropagation();
+  $(".collapse").collapse("toggle");
+});
+//
+// $("#navbar").on("show.bs.collapse", function() {
+//   var indexHighest = 0;
+//   $(".dummy").each(function() {
+//   var indexCurrent = parseInt($(this).css("zIndex"), 10);
+//     if(indexCurrent > indexHighest) {
+//       indexHighest = indexCurrent;
+//     }
+//   });
+//
+//   $(".darken").css("z-index", indexHighest + 1);
+//   $(".darken").addClass("appear");
+//   $("#on-top").css({
+//     "position": "relative",
+//     "z-index": indexHighest + 2
+//   });
+//   $(".social-icon").css("color", "#fff");
+// });
+//
+// $("#navbar").on("hidden.bs.collapse", function() {
+//   $(".darken").removeClass("appear");
+//   $(".darken").css("z-index", "");
+//   $("#on-top").css({
+//     "position": "",
+//     "z-index": ""
+//   });
+//   $(".social-icon").css("color", "");
+// });
+//
+// $(window).resize(function(){
+//    var width = $(window).width();
+//    if(width >= 768){
+//      $(".collapse").collapse("hide");
+//      $(".darken").removeClass("appear");
+//      $(".darken").css("z-index", "");
+//      $(".darken").css("z-index", "");
+//      $("#on-top").css({
+//        "position": "",
+//        "z-index": ""
+//      });
+//      $(".social-icon").css("color", "");
+//    }
+// });
